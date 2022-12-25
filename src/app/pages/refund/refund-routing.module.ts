@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RefundComponent } from './refund.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('../app/pages/pages.module').then(m => m.PagesModule)
+    component: RefundComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-  
- }
+export class RefundRoutingModule { }

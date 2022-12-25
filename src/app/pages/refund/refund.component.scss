@@ -1,0 +1,196 @@
+.main-content {
+    width: 100%;
+    max-width: 745px;
+    margin: auto;
+
+    // background-color: yellow;
+    .text {
+        display: flex;
+        align-items: center;
+        color: #0f86f6;
+        font-size: 160%;
+        position: relative;
+        margin-bottom: 20px;
+
+        img {
+            display: inline-block;
+            // background-image: url(https://soleil-confiance.co.jp/wp-content/themes/soleil/images/zeirishi/tit01.png);
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            z-index: 2;
+        }
+
+        
+    }
+
+    .mb20 {
+        margin-bottom: 20px;
+    }
+
+    .pac_title {
+        display: block;
+        height: 75px;
+        background: #0f86f6;
+        padding: 7px 10px;
+        text-align: left;
+        color: #fff;
+        font-weight: bold;
+        font-size: 120%;
+        box-sizing: border-box;
+    }
+
+    .half {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 0px;
+        grid-gap: 20px;
+
+        .txt {
+            list-style: none;
+            border: 3px solid #0f86f6;
+            padding: 60px 0;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 130%;
+            font-weight: bold;
+            color: #0f86f6;
+        }
+    }
+
+    .mb30 {
+        margin-bottom: 30px;
+    }
+
+    .zeirishi_top {
+        position: relative;
+        background: #0f86f6 !important;
+        position: relative;
+        background: #f7b500;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        padding: 8px;
+        font-size: 120%;
+        margin-bottom: 35px;
+    }
+
+    .zeirishi_top:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 47%;
+        border: 15px solid transparent;
+        border-top: 15px solid #0f86f6;
+        width: 0;
+        height: 0;
+    }
+
+    .service_box {
+        li {
+            list-style: none;
+
+            dl {
+                margin: 0;
+            }
+
+            dl dt {
+                position: relative;
+                padding: 10px;
+                background: #d5ebff;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 16px;
+                color: #000;
+            }
+
+            dl dt::after {
+                position: absolute;
+                content: '';
+                top: 100%;
+                left: 46%;
+                border: 15px solid transparent;
+                border-top: 15px solid #d5ebff;
+                width: 0;
+                height: 0;
+            }
+
+            dl dd {
+                margin: 0;
+            }
+
+            dl dd img {
+                width: 100%;
+                overflow-clip-margin: content-box;
+                overflow: clip;
+            }
+
+        }
+    }
+    .layout-img img{
+        max-width: 100% ;
+    }
+
+    .check {
+        background: url(https://soleil-confiance.co.jp/wp-content/themes/soleil/images/zeirishi/nayami_bg.png);
+        padding: 20px !important;
+        margin-bottom: 50px;
+
+        li {
+            list-style: none;
+            background: #fff;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+
+            span {
+                position: relative;
+                padding-left: 60px;
+                display: block;
+            }
+
+            span::after {
+                content: url(https://soleil-confiance.co.jp/wp-content/themes/soleil/images/zeirishi/refound/icon.png);
+                position: absolute;
+                top: -7px;
+                left: 5px;
+            }
+
+            .check-done:after {
+                content: url(https://soleil-confiance.co.jp/wp-content/themes/soleil/images/zeirishi/check.png);
+
+            }
+
+
+        }
+
+
+
+    }
+
+}
+
+@media only screen and (min-width:200px) and (max-width:750px) {
+    .main-content {
+        .half {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            width: 100%;
+            padding: 0px;
+        }
+
+    }
+    .service_box {
+        li {
+            dl dd img {
+                display: block;
+                margin: auto;
+                width: 70% !important;
+                overflow-clip-margin: content-box;
+                overflow: clip;
+            }
+
+        }
+    }
+}
